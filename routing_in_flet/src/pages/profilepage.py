@@ -7,6 +7,9 @@ class SizedBox(ft.Container):
         self.height=height
         self.width=width
 
+
+
+
 def profilepage(page):
     page.views.clear()
     page.views.append(
