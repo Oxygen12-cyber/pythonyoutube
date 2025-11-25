@@ -2,10 +2,12 @@ import flet as ft
 
 
 class SizedBox(ft.Container):
-    def __init__(self, height: int = 0, width: int = 0):
+    def __init__(self, height: int = 0, width: int = 0, child = None):
         super().__init__()
         self.height=height
         self.width=width
+        self.content=child
+
 
 
 
@@ -60,7 +62,7 @@ def profilepage(page):
                             SizedBox(height=40),
                             ft.IconButton(
                                 ft.Icons.CHEVRON_LEFT_ROUNDED, icon_color="white",
-                                tooltip=ft.Tooltip("Go Back"), bgcolor="black",
+                                tooltip=ft.Tooltip("Go Back"), bgcolor="black",icon_size=64,
                                 on_click=lambda _: page.go("/")
                                 )
                         ],

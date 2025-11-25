@@ -32,11 +32,11 @@ def homepage(page):
                             content= ft.Column(
                                 [
                                     ft.Container(height=15),
-                                    ft.Text("Subscribe and like the VIDEO\n if you like it", color="black", weight=ft.FontWeight.BOLD, size=24, text_align=ft.TextAlign.CENTER),
+                                    ft.Text("Save Up To $250 Over\n 12 Months With It", color="black", weight=ft.FontWeight.BOLD, size=32, text_align=ft.TextAlign.CENTER),
                                     ft.Container(height=15),
-                                    ft.Text("You can also comment if you have any questions or anything to say, \n it'll really help the channel", text_align=ft.TextAlign.CENTER,color=ft.Colors.BLACK38, size=16, weight=ft.FontWeight.W_400),
+                                    ft.Text("You'll also save 10$/mth for 12 months + an additional ongoing 10$/mth", text_align=ft.TextAlign.CENTER,color=ft.Colors.BLACK38, size=16, weight=ft.FontWeight.W_400),
                                     ft.Container(height=60),
-                                    ft.GestureDetector(ft.Container(alignment=ft.alignment.center,width=300, content=ft.Text("Proceed >", color="white", size=18, weight=ft.FontWeight.BOLD), border_radius=32, padding=18, bgcolor="black"), on_tap=lambda _: page.go("/profile"))
+                                    ft.GestureDetector(ft.Container(alignment=ft.alignment.center,width=300, content=ft.Text("Login ", color="white", size=18, weight=ft.FontWeight.BOLD), border_radius=32, padding=18, bgcolor="black"), on_tap=lambda _: page.go("/profile"))
                                 ],
                                 tight=True,
                                 spacing=10,
